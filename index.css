@@ -1,0 +1,93 @@
+@media (min-width:720px) and (max-width:992px){
+  .type-container{
+      font-size: 80px;
+  }
+}
+
+nav,body{
+    background-color: rgb(0, 0, 0);
+    /* background-repeat: no-repeat; */
+}
+h1{
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color:azure;
+    font-size: 180px;
+    margin-top: 300px;
+}
+.favicon{
+  width: 20px;
+  height: 20px;
+}
+.heading {
+    animation: fadeInOut 2s alternate;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+button{
+    width: 120px;
+    height: 50px;
+}
+.tabs{
+    padding-top: 50px;
+    padding-left: 300px;
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    font-family: "DM Sans", sans-serif;
+     background-color: rgb(158, 179, 217);
+}
+.enlarge-on-hover {
+    width: 200px;
+    height: 100px;
+    transition: transform 0.3s ease;
+  }
+  
+  .enlarge-on-hover:hover {
+    transform: scale(1.2);
+  }
+  .typing-effect {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    animation: typing 3s steps(40, end);
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+
+.container {
+  position: relative;
+  font-size: 120px;
+  font-weight: bold;
+  color: transparent;
+  display: inline-block;
+}
+.container::before {
+  content: "We're SignSentry!";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url('./mainbg.jpg');
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
